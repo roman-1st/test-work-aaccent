@@ -1,0 +1,28 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  flex-wrap: wrap;
+  font-family: 'PT Serif', serif;
+}
+
+@media screen and (max-width: 750px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}

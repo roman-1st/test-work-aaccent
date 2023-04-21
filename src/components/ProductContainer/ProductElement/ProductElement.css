@@ -1,0 +1,46 @@
+.ProductElement {
+    padding: 20px 0;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    height: 300px;
+    font-size: clamp(12px, 1vw, 16px);
+}
+
+.title{
+    width: 240px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.priceContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 250px;
+}
+
+
+.btnAddToOrder {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    text-transform: none;
+     font-style: normal;
+    font-family: 'PT Serif', serif;
+    font-size: clamp(12px, 1vw, 14px);
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btnAddToOrder:hover {
+    background-color: rgb(164, 206, 255);
+    transition: 0.3s;
+}

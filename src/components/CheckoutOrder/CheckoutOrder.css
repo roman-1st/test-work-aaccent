@@ -1,0 +1,172 @@
+.orderPage {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.orderContainer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 50vw;
+    max-width: 650px;
+    min-height: 200px;
+    background-color: white;
+}
+
+.orderMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    margin: 0 15px;
+}
+
+.navigationButton:hover {
+    background-color: rgb(212, 231, 255);
+    transition: 0.3s;
+    outline: 'none';
+    border-radius: 16px;
+}
+
+.orderMenu h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.orderInform {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orderMenu button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(255, 243, 227, 0.127);
+    border: none;
+    border-radius: 10px ;
+}
+
+.clearOrderButton:hover {
+    transition: 0.2s;
+    background-color: rgba(218, 75, 75, 0.15);
+    border-radius: 16px;
+}
+
+.checkoutOrder:hover {
+    transition: 0.2s;
+    background-color: rgba(218, 75, 75, 0.15);
+}
+
+.orderList {
+    margin: 0 10px 15px 10px;
+}
+
+.orderItemContainer {
+    position: relative;
+}
+
+.orderElement {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(169, 169, 169);
+    margin-bottom: 10px;
+}
+
+.checkoutElement {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+}
+
+.addOneItemButton {
+    background: url("https://img.icons8.com/material-rounded/512/plus-math.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    margin-left: 15px;
+}
+
+.addOneItemButton:hover {
+    background-color: rgba(183, 255, 180, 0.5);
+    transition: 0.2s;
+}
+
+.deleteItemButton {
+    background: url("https://img.icons8.com/material-rounded/512/minus.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 650px) {
+
+    .deleteItemButton, .addOneItemButton, .clearItemButton {
+        width: 20px;
+        height: 20px;
+        margin-left: 0;
+    }
+    .orderContainer {
+        width: 70vw;
+    }
+
+}
+
+.deleteItemButton:hover {
+    background-color: rgba(255, 180, 180, 0.5);
+    transition: 0.2s;
+}
+
+.clearItemButton {
+    position: absolute;
+    right: 20px;
+    background: url("https://img.icons8.com/material-two-tone/512/delete-sign.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 25px;
+    height: 25px;
+    border: none;
+
+}
+
+.clearItemButton:hover {
+    background-color: rgba(255, 91, 91, 0.5);
+    transition: 0.2s;
+}
+
+.checkoutOrderButton {
+    background: url("https://img.icons8.com/ios/512/checkout.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+
+
+.checkoutOrderButton:hover {
+    transition: 0.2s;
+    background-color: rgba(111, 212, 81, 0.15);
+}

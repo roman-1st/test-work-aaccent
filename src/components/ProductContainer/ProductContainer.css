@@ -1,0 +1,78 @@
+.mainContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    max-width: 780px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.ProductContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 700px;
+    min-width: 300px;
+}
+
+.changePages {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.changePageButton {
+    margin: auto;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    font-style: normal;
+    font-family: 'PT Serif', serif;
+    font-size: clamp(12px, 1vw, 14px);
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.changePageButton:hover {
+    background-color: rgb(212, 231, 255);
+    transition: 0.3s;
+    outline: none;
+}
+
+@media screen and (max-width: 750px) {
+    .ProductContainer {
+        justify-content: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .ProductContainer {
+        justify-content: center;
+    }
+    .mainContainer {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .ProductContainer {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .changePages {
+        grid-column: span 1;
+    }
+}
