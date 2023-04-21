@@ -9,7 +9,7 @@ import axios from 'axios';
 export const fetchBrands = () => {
     return async (dispatch: Dispatch<BrandsActions>) => {
         try {
-            const response = await axios.get("http://localhost:3000/assets/brands.json")
+            const response = await axios.get("http://localhost:3000/brands.json")
             dispatch({type: BrandsActionsTypes.ADD_BRANDS, payload: response.data})
         } catch (e: any) {
             console.log(e.message);
@@ -20,7 +20,7 @@ export const fetchBrands = () => {
 export const fetchPoducts = () => {
     return async (dispatch: Dispatch<ProductsActions>) => {
         try {
-            const response = await axios.get("http://localhost:3000/assets/products.json")
+            const response = await axios.get("http://localhost:3000/products.json")
             dispatch({type: ProductsActionTypes.GET_ALL_PRODUCT, payload: response.data})
         } catch (e: any) {
             console.log(e.message);
